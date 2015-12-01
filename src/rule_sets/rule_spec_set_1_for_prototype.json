@@ -1,0 +1,143 @@
+{
+  "splash_pagekey": [
+    {
+      "currentstate": "splash_pagekey",
+      "input": "",
+      "precondition": "verifySplashScreenElements",
+      "event": "tapSplashScreenSignIn",
+      "validation": "verifyLoginScreenElements",
+      "bookkeeping": "Sign In button Validated",
+      "resultingstate": "login_pagekey"
+    },
+    {
+      "currentstate": "splash_pagekey",
+      "input": "",
+      "precondition": "verifySplashScreenElements",
+      "event": "tapSplashScreenJoinNow",
+      "validation": "verifyRegisterScreenElements",
+      "bookkeeping": "Join Now button Validated",
+      "resultingstate": "splash_pagekey"
+    }
+  ],
+  "login_pagekey": [
+      {
+      "currentstate": "login_pagekey",
+      "input": "",
+      "precondition": "setInvalidLoginCredentials",
+      "event": "tapLoginScreenSignIn",
+      "validation": "verifyLoginScreenElements",
+      "bookkeeping": "Login validated with invalid email",
+      "resultingstate": "login_pagekey"
+    },
+    {
+      "currentstate": "login_pagekey",
+      "input": "",
+      "precondition": "setValidLoginCredentials",
+      "event": "tapLoginScreenSignIn",
+      "validation": "verifyFeedScreenElements",
+      "bookkeeping": "Login validated",
+      "resultingstate": "feedpage_pagekey"
+    }
+  ],
+  "feedpage_pagekey": [
+    {
+      "currentstate": "feedpage_pagekey",
+      "input": "",
+      "precondition": "verifyFeedScreenElements",
+      "event": "tapProfile",
+      "validation": "verifyProfileScreenElements",
+      "bookkeeping": "Profile screen validated",
+      "resultingstate": "profile_pagekey"
+    },
+    {
+      "currentstate": "feedpage_pagekey",
+      "input": "",
+      "precondition": "verifyFeedScreenElements",
+      "event": "tapMessaging",
+      "validation": "verifyMessagingScreenElements",
+      "bookkeeping": "Messaging screen validated",
+      "resultingstate": "messaging_pagekey"
+    },
+    {
+      "currentstate": "feedpage_pagekey",
+      "input": "",
+      "precondition": "verifyFeedScreenElements",
+      "event": "tapPeople",
+      "validation": "verifyPeopleScreenElements",
+      "bookkeeping": "People screen validated",
+      "resultingstate": "people_pagekey"
+    },
+    {
+      "currentstate": "feedpage_pagekey",
+      "input": "",
+      "precondition": "verifyFeedScreenElements",
+      "event": "tapSearch",
+      "validation": "verifySearchScreenElements",
+      "bookkeeping": "Search screen validated",
+      "resultingstate": "search_pagekey"
+    }
+
+  ],
+  "people_pagekey": [
+    {
+      "currentstate": "people_pagekey",
+      "input": "",
+      "precondition": "people_pagekey",
+      "event": "tapPeople",
+      "validation": "verify_people_elements",
+      "bookkeeping": "In People Screen",
+      "resultingstate": "people_pagekey"
+    },
+    {
+      "currentstate": "people_pagekey",
+      "input": "",
+      "precondition": "people_pagekey",
+      "event": "tapInvitationsandConnections",
+      "validation": "verify_invitations_and_connections_elements",
+      "bookkeeping": "In Invitations and Connections Screen",
+      "resultingstate": "InvitationsandConnections_pagekey"
+    },
+    {
+      "currentstate": "people_pagekey",
+      "input": "",
+      "precondition": "people_pagekey",
+      "action": "enterDataForPeople",
+      "event": "tapInvitationsandConnections()",
+      "validation": "verify_add_connections_screen_elements",
+      "bookkeeping": "In Add Connections Screen",
+      "resultingstate": "add_connections_pagekey"
+    }
+  ],
+  "message_pagekey": [
+    {
+      "currentstate": "message_pagekey",
+      "precondition": "empty_to()",
+      "action": "enterDataForMessage",
+      "event": "tapSend()",
+      "resultingstate": "message_pagekey"
+    },
+    {
+      "currentstate": "message_pagekey",
+      "precondition": "empty_message",
+      "action": "enterDataForMessage",
+      "event": "tapSend()",
+      "resultingstate": "message_pagekey"
+    },
+    {
+      "currentstate": "message_pagekey",
+      "precondition": "valid_to_and_valid_message",
+      "action": "enterDataForMessage",
+      "event": "tapSend()",
+      "resultingstate": "message_pagekey_with_text_area"
+    }
+  ],
+  "message_pagekey_with_text_area": [
+    {
+      "currentstate": "message_pagekey_with_text_area",
+      "precondition": "verify_text_area",
+      "action": "",
+      "event": "tapBackArrow()",
+      "resultingstate": "people_pagekey"
+    }
+  ]
+}

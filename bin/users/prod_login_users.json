@@ -1,0 +1,36 @@
+{
+
+    "credentials":[
+        {
+            "email":"romanneel@yahoo.com",
+            "password":"cctest123",
+            "firstname":"Ramesh",
+            "lastname":"Deo"
+        },
+        {
+            "email":"jobsproduser@test.linkedin.com",
+            "password":"Linkedin123",
+            "firstname":"Bunny",
+            "lastname":"O'Singh"
+        },
+        {
+            "email":"test_user1@test.linkedin.com",
+            "password":"Satya@123",
+            "firstname":"test",
+            "lastname":"user1"
+        },
+        {
+            "email":"profile_preview1@test.linkedin.com",
+            "password":"Satya@123",
+            "firstname":"profile",
+            "lastname":"preview1"
+        },
+        {
+            "email":"qa.homer@gmail.com",
+            "password":"cctest678",
+            "firstname":"Johnny",
+            "lastname":"Charles"
+        }
+    ]
+
+}
