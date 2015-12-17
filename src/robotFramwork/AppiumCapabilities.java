@@ -70,7 +70,7 @@ public class AppiumCapabilities {
    public void robotTest() throws InterruptedException, FileNotFoundException, IOException, ParseException  {
 
      JSONParser parser = new JSONParser();
-     JSONObject jsonObject = (JSONObject) parser.parse(new FileReader(System.getProperty("user.dir") + "/src/users/prod_login_users.json"));
+     JSONObject jsonObject = (JSONObject) parser.parse(new FileReader(System.getProperty("user.dir") + "/src/users/website_login_users.json"));
      JSONArray loginCredentialsArray = (JSONArray) jsonObject.get("credentials");
      Iterator<?> nextLogin = loginCredentialsArray.iterator();
      while (nextLogin.hasNext()) {

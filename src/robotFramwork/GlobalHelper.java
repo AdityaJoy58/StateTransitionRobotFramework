@@ -23,7 +23,7 @@ public class GlobalHelper extends AppiumCapabilities{
     System.out.println("Verifying Splash Screen Elements Started");
     Assert.assertTrue(driver.findElement(By.id(MobileScreenElements.splash_screen_signin_button)).isDisplayed(), "Splash Screen Signin Element Not Found");;
     Assert.assertTrue(driver.findElement(By.id(MobileScreenElements.splash_screen_joinnow_button)).isDisplayed(), "Splash Screen JoinNow Element Not Found");;
-    Assert.assertTrue(driver.findElement(By.id(MobileScreenElements.splash_screen_company_logo)).isDisplayed(), "Splash Screen Linkedin Logo Element Not Found");;
+    Assert.assertTrue(driver.findElement(By.id(MobileScreenElements.splash_screen_company_logo)).isDisplayed(), "Splash Screen Company Logo Element Not Found");;
     System.out.println("Verifying Splash Screen Elements Completed");
 
   }

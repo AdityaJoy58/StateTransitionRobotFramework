@@ -1,0 +1,36 @@
+{
+
+    "credentials":[
+        {
+            "email":"xxxxx@xxxx.xxx",
+            "password":"xxxxxxxxx",
+            "firstname":"xxxx",
+            "lastname":"xxxxx"
+        },
+        {
+            "email":"xxxxxx@xxxx.xxx",
+            "password":"xxxxxxxx",
+            "firstname":"xxxxx",
+            "lastname":"xxxxxxxx"
+        },
+        {
+            "email":"xxxxx@xxxx.xxx",
+            "password":"xxxxx",
+            "firstname":"xxxxx",
+            "lastname":"xxxxxxx"
+        },
+        {
+            "email":"xxxxxxxx@xxxxx.xxx",
+            "password":"xxxx",
+            "firstname":"xxxxx",
+            "lastname":"xxxxx"
+        },
+        {
+            "email":"xxxxxx@xxxxxx.xxx",
+            "password":"xxxxx",
+            "firstname":"xxxxx",
+            "lastname":"xxxxx"
+        }
+    ]
+
+}
